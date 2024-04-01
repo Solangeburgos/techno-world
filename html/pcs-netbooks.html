@@ -10,34 +10,43 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
-
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <!--LINK CSS-->
+   <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
     <header>
-        <img class="size-logo" src="../img/2111125.png" alt="logo-technoworld">
-        <h1>TechnoWorld</h1>
-        <nav>
+        <nav class="navbar col-12" >
+            <img class="size-logo" src="../img/technoworld-logo.png" alt="logo-technoworld">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="celulares.html">Celulares</a></li>
                 <li><a href="pcs-netbooks.html">PCs y Netbooks</a></li>
                 <li><a href="gaming.html">Gaming</a></li>
-
             </ul>
-             <img class="buscar-icon" src="../img/buscar.png" alt="icono-busqueda">
-             <input type="text" placeholder="Buscar productos">
-             <img class="carrito-logo" src="../img/carrito-de-compras.png" alt="icon-carrito">
-             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	              width="20px" height="20px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
-	          <g id="account-circle">
-		       <path d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M255,76.5
-			c43.35,0,76.5,33.15,76.5,76.5s-33.15,76.5-76.5,76.5c-43.35,0-76.5-33.15-76.5-76.5S211.65,76.5,255,76.5z M255,438.6
-			c-63.75,0-119.85-33.149-153-81.6c0-51,102-79.05,153-79.05S408,306,408,357C374.85,405.45,318.75,438.6,255,438.6z"/>
-	         </g>
-          </svg>
-             <a href="registro.html">Mi Cuenta</a>
-        </nav>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </form>
+               <!-- <input class="navbar-search" type="text" placeholder="Buscar productos"> 
+               <img class="buscar-icon" src="img/buscar.png" alt="icono-busqueda">  -->
+             <div class="navbar-cart">
+                <img class="carrito-logo" src="../img/carrito-de-compras.png" alt="icon-carrito">
+             </div>
+             <div class="navbar-account">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="20px" height="20px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+            <g id="account-circle">
+             <path d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M255,76.5
+             c43.35,0,76.5,33.15,76.5,76.5s-33.15,76.5-76.5,76.5c-43.35,0-76.5-33.15-76.5-76.5S211.65,76.5,255,76.5z M255,438.6
+             c-63.75,0-119.85-33.149-153-81.6c0-51,102-79.05,153-79.05S408,306,408,357C374.85,405.45,318.75,438.6,255,438.6z"/>
+             </g>
+            </svg>
+             </div>
+        
+            <a href="registro.html">Mi Cuenta</a>
+    </nav>
     </header>
 <hr>
 
@@ -45,7 +54,7 @@
     <span class="categoria-card">PCS Y NOTEBOOKS</span>
     <br>
     <br>
- <section>
+ <!-- <section>
     <div class="filtro-message">Filtra tu busqueda </div>
     <div class="filtro-title"><h3>MARCA</h3>
      <ul>
@@ -113,7 +122,7 @@
        </li>
      </ul>        
     </div>
- </section>
+ </section> -->
 
  <section>
      <img  class="image-prod" src="../img/Notebook-Samsung-Galaxy-Book3-Core-i5-512Gb-8Gb-14-Win11-Silver_45962_1.jpeg" alt="notebook-book3-core">
@@ -138,11 +147,14 @@
 
         <h3>SEGUINOS EN</h3>
         <ul>
-            <li><a href="https://www.whatsapp.com/?lang=es_LA"><img class="size-logo" src="../img/whatsapp.png" alt="icono-whatsapp"></a></li>
-            <li><a href="https://twitter.com/?lang=es"><img class="size-logo" src="../img/gorjeo.png" alt="icono-x"></a></li>
-            <li><a href="https://www.instagram.com/"><img class="size-logo" src="../img/instagram.png" alt="icono-instagram" ></a></li>
-            <li><a href="https://www.facebook.com/?locale=es_LA"><img class="size-logo" src="../img/facebook.png" alt="icono-facebook" ></a></li>
+            <li><a href="https://www.whatsapp.com/?lang=es_LA"><img class="size-social-net" src="../img/whatsapp.png" alt="icono-whatsapp"></a></li>
+            <li><a href="https://twitter.com/?lang=es"><img class="size-social-net" src="../img/gorjeo.png" alt="icono-x"></a></li>
+            <li><a href="https://www.instagram.com/"><img class="size-social-net" src="../img/instagram.png" alt="icono-instagram" ></a></li>
+            <li><a href="https://www.facebook.com/?locale=es_LA"><img class="size-social-net" src="../img/facebook.png" alt="icono-facebook" ></a></li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>

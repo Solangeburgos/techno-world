@@ -1,64 +1,100 @@
-header{
-    background-color:#A9BAC3;
-}
-
-header nav ul{
-    list-style-type: none;
-}
-
 body{
     background-color: #D0E2E5;
 }
 
-a {
-    text-decoration: none;
-    color:#053956;
-    font-size: 20px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/*ESTILOS HEADER*/
+
+
+header{
+    background-color:#A9BAC3;
+    margin-top: 1px;
+    border-radius: 10px;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+
+header nav ul li{
+margin: 10px;
+margin-top: 40px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-account {
+    display: flex;
+    align-items: center;
+}
+
+.form{
+
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+}
+
+
+
+ 
+/* 
+.navbar-cart{
+    margin-right: 100%;
+}
+.navbar-account {
+    margin-right: 5px;
+} */
+
 .size-logo{
-    width: 50px;
+    width: 250px;
+    height: 100px;
+}
+
+.navbar-search{
+margin-left: 30px;
 }
 
 .buscar-icon{
   width: 20px;
-}
-
-.begin-techno{
-font-size:x-large;
-font-family: "Share Tech", sans-serif;
-font-style: oblique;
-}
-
-h1{
-    font-family: "Share Tech", sans-serif;;
-    color: #053956;
-}
-
-
-
-footer{
-    background-color:#A9BAC3;
-}
-
-footer ul{
-    list-style-type: none;
-}
-
-.suscripcion-mesagge{
-    font-size: large;
-    font-weight:lighter;
-}
-
-button{
-    background-color: #105e88;
-    color: white;
-    border: none;
-    font-size: small;
+  padding-left:0px;
 }
 
 .carrito-logo{
     height: 30px;
     width: 30px;
+    margin-right: 20px;
+}
+
+
+
+/*ESTILOS MAIN INDEX*/
+a {
+    text-decoration: none;
+    color:#053956;
+    font-size: 20px;
+}
+h1{
+    font-family: "Share Tech", sans-serif;;
+    color: #053956;
 }
 
 ul li{
@@ -66,11 +102,20 @@ ul li{
 }
 
 .categoria-card{
+    display: flex;
+    justify-content: center;
     font-family: "Share Tech", sans-serif;;
     font-size: x-large;
     color: #053956;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 .filtro-title{
     color:#105e88;
@@ -88,10 +133,77 @@ ul li{
 }
 
 
+.begin-techno{
+    font-size:x-large;
+    font-family: "Share Tech", sans-serif;
+    font-style: oblique;
+    }
+
+ .img-promo{
+    width: 100%;
+ }
+
+
+ /*ESTILOS FOOTER*/
+
+footer{
+    background-color:#A9BAC3;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    bottom: 0%;
+    height:15vh;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+.grid-container footer ul{
+    list-style-type: none;
+}
+
+.grid-container .wsp-icon, .x-icon, .insta-icon, .face-icon{
+    display: inline-block;
+}
+
+
+.grid-container .suscripcion-mesagge{
+    font-size: 150%;
+    font-weight:lighter;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:darkslategray;
+}
+
+
+
+button{
+    background-color: #105e88;
+    color: white;
+    border: none;
+    font-size: small;
+}
+
+
+.grid-container  .size-social-net{
+    display: flex;
+    justify-content:left;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
 /* MODIFICA TAMAÑO IMAGENES */
 .image-prod{
-height: 250px;
-width: 250px;
+height: 30vh;
+width: 30vh;
 border-radius: 10px;
 }
 
