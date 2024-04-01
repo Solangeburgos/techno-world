@@ -35,6 +35,7 @@ margin-top: 40px;
     padding: 10px;
 }
 
+
 .navbar-account {
     display: flex;
     align-items: center;
@@ -58,6 +59,8 @@ margin-top: 40px;
 } */
 
 .size-logo{
+    display: flex;
+    justify-content: left;
     width: 250px;
     height: 100px;
 }
@@ -298,4 +301,10 @@ border-radius: 10px;
     color:#011a27;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:20px;
+}
+
+@media only screen and (max-width:320px){
+    .navbar{
+        display: none;
+    }
 }
