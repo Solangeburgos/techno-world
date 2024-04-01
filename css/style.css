@@ -201,6 +201,25 @@ ul li{
     margin-right: 80px;
 }
  
+
+.form-flex{
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: #105e88;
+    font-weight: bold;
+    width: 130px;
+    float: left;
+  
+  }
+
+  .new-account-btn{
+      margin-top: 20px;
+      text-align: center;
+  }
+
  /*ESTILOS FOOTER*/
 
 footer{
