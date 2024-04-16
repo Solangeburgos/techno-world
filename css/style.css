@@ -238,7 +238,16 @@ footer{
     height:15vh;
     margin-top: 20px;
 }
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
 
+.footer-icons li {
+    margin-right: 10px; 
+}
 .input-textbox-size{
     width:100%;
 }
